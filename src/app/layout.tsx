@@ -17,7 +17,7 @@ const mono = Fira_Mono({
 
 export const metadata: Metadata = {
   title: "Shrink Inc.",
-  description: "Shrink Inc. builds software.",
+  description: "Shrink Inc. makes things for the www.",
 };
 
 export default function RootLayout({
