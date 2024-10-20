@@ -81,7 +81,7 @@ export default function Home() {
         <CompanyCard />
       </li>
       {projects.map((project) => (
-        <li key={project.link.href} className="grow">
+        <li key={project.link.href}>
           <ProjectCard {...project} />
         </li>
       ))}
