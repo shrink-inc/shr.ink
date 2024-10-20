@@ -16,5 +16,5 @@ $ task
 
 Deployed on Vercel, [@shrink-inc/shr-ink][vercel-project].
 
-[task]: https://taskfile.dev/
+[task]: https://taskfile.dev
 [vercel-project]: https://vercel.com/shrink-inc/shr-ink
