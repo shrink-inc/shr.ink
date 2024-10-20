@@ -1,0 +1,32 @@
+version: "3"
+
+silent: true
+
+dotenv:
+  - "Taskfile.env"
+  - "Taskfile.env.example"
+
+tasks:
+  default:
+    cmds:
+      - task --list
+
+  start:
+    desc: Run NextJS development server locally
+    deps:
+      - node-dependencies
+    cmds:
+      - cmd: npm run dev -- -p $WEBSITE_PORT
+
+  lint:
+    desc: Automatically check for any code rule or style violations (and fix)
+    deps:
+      - node-dependencies
+    cmds:
+      - npm run lint
+
+  node-dependencies:
+    cmds:
+      - npm install
+    sources:
+      - "package-lock.json"
