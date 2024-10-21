@@ -53,7 +53,7 @@ function ProjectCard({ name, description, link, icon }: Project) {
 function CompanyCard() {
   return (
     <div className="relative flex h-full flex-row gap-x-6">
-      <Image src={SquidLogo} className="z-50 w-24" alt="Shrink Inc logo" />
+      <Image src={SquidLogo} priority={true} className="z-50 w-24" alt="Shrink Inc. squid logo" />
       <CardBody>
         <h2 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
           <span className="absolute -inset-x-4 -inset-y-6 z-0 sm:-inset-x-6 sm:rounded-2xl"></span>
