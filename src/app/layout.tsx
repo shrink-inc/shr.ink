@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import "tailwindcss/tailwind.css";
+import { Analytics } from "@vercel/analytics/react";
 
+import "tailwindcss/tailwind.css";
 import { Fira_Sans, Fira_Mono } from "next/font/google";
 
 const sans = Fira_Sans({
@@ -31,6 +32,7 @@ export default function RootLayout({
         className={`bg-pink-50/50 antialiased dark:bg-zinc-900 ${sans.variable} ${mono.variable} font-sans`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
