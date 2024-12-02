@@ -1,8 +1,9 @@
 import { ReactNode } from "react";
+import Image from "next/image";
 
 export type Project = {
   name: string;
-  icon: string;
+  icon: ReactNode;
   description: ReactNode;
   link: {
     label: string;
@@ -28,10 +29,55 @@ function DomainPlaceholder({
 export const projects: Project[] = [
   {
     name: "Defunct",
-    icon: "🪦",
+    icon: (
+      <Image
+        alt="defunct.net icon"
+        src="https://defunct.net/favicon.ico"
+        className="inline size-4"
+        width={48}
+        height={48}
+      />
+    ),
     description:
       "Don't leave domains unresolved. Free landing pages and email inboxes for unused domains.",
     link: { label: "defunct.net", href: "https://defunct.net" },
+  },
+  {
+    name: "handles.net",
+    icon: (
+      <Image
+        alt="handles.net icon"
+        src="https://handles.net/favicon.ico"
+        className="inline size-4"
+        width={48}
+        height={48}
+      />
+    ),
+    description:
+      "Manage and provision Bluesky handles for your team, community or group.",
+    link: { label: "handles.net", href: "https://handles.net" },
+  },
+  {
+    name: "Handles Club",
+    icon: (
+      <Image
+        alt="handles.club icon"
+        src="https://handles.club/favicon.ico"
+        className="inline size-4"
+        width={48}
+        height={48}
+      />
+    ),
+    description: (
+      <>
+        A free collection of more than 100 domains for personalized Bluesky
+        handles, like{" "}
+        <DomainPlaceholder placeholder="name" domain="on.computer" />,{" "}
+        <DomainPlaceholder placeholder="name" domain="and.cat" /> and{" "}
+        <DomainPlaceholder placeholder="name" domain="likes.earth" />.
+      </>
+    ),
+    link: { label: "handles.club", href: "https://handles.club" },
   },
   {
     name: "is.now",
@@ -102,6 +148,15 @@ export const projects: Project[] = [
     link: {
       label: "github.com",
       href: "https://github.com/shrink-inc/shr.ink",
+    },
+  },
+  {
+    name: "prompt/avatars.dog",
+    icon: "🐶",
+    description: "Fetch Bluesky avatars with a single URL.",
+    link: {
+      label: "github.com",
+      href: "https://github.com/prompt/avatars.dog",
     },
   },
 ];
