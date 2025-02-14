@@ -66,7 +66,9 @@ function CompanyCard() {
         </h2>
 
         <p className="relative z-10 grow text-sm text-zinc-600 dark:text-zinc-400">
-          websites, widgets and whatever for the www.
+          websites, widgets, whatever for the <span title="websites">w</span>
+          <span title="widgets">w</span>
+          <span title="whatever">w</span>.
         </p>
         <div className="w-full text-sm">
           <EmailButton address="hello@shr.ink" />
