@@ -92,6 +92,16 @@ export const projects: Project[] = [
     link: { label: "is.now", href: "https://is.now" },
   },
   {
+    name: "prompt/handles-server",
+    icon: "🦋",
+    description:
+      "An open source Bluesky handle verification server powering thousands of handles for handles.net.",
+    link: {
+      label: "github.com",
+      href: "https://github.com/prompt/handles-server",
+    },
+  },
+  {
     name: "prompt/actions-assert",
     icon: "🚦",
     description:
@@ -122,6 +132,15 @@ export const projects: Project[] = [
     },
   },
   {
+    name: "prompt/avatars.dog",
+    icon: "🐶",
+    description: "Fetch Bluesky avatars with a single URL.",
+    link: {
+      label: "github.com",
+      href: "https://github.com/prompt/avatars.dog",
+    },
+  },
+  {
     name: "prompt/actions-semver-aliases",
     icon: "👯",
     description:
@@ -148,15 +167,6 @@ export const projects: Project[] = [
     link: {
       label: "github.com",
       href: "https://github.com/shrink-inc/shr.ink",
-    },
-  },
-  {
-    name: "prompt/avatars.dog",
-    icon: "🐶",
-    description: "Fetch Bluesky avatars with a single URL.",
-    link: {
-      label: "github.com",
-      href: "https://github.com/prompt/avatars.dog",
     },
   },
 ];
