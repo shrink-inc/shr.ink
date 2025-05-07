@@ -80,18 +80,6 @@ export const projects: Project[] = [
     link: { label: "handles.club", href: "https://handles.club" },
   },
   {
-    name: "is.now",
-    icon: "🗓️",
-    description: (
-      <>
-        Domains for your now page. A nice{" "}
-        <DomainPlaceholder placeholder="name" domain="is.now" />, or a fancy
-        exclusive <DomainPlaceholder placeholder="name" domain="now" />.
-      </>
-    ),
-    link: { label: "is.now", href: "https://is.now" },
-  },
-  {
     name: "prompt/handles-server",
     icon: "🦋",
     description:
